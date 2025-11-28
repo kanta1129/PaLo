@@ -12,7 +12,7 @@ class AuthService {
         return try await Auth.auth().signIn(withEmail: email, password: password)
     }
     
-    func siginOut() throws {
+    func signOut() throws {
         try Auth.auth().signOut()
     }
 }
